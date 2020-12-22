@@ -7,7 +7,7 @@
 - 完全功能测试，运行`/HRMIS-Se7en/src/edu/fzu/hrmis/SysLoader.java`即可
 
 主菜单示例如下：
-
+```
 Se7en科技 - Employee Information - Main Menu
 =====================================================
 
@@ -23,3 +23,4 @@ Se7en科技 - Employee Information - Main Menu
 Q - Quit
 
 Your Selection:
+```
