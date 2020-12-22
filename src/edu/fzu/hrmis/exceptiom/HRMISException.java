@@ -2,7 +2,7 @@ package edu.fzu.hrmis.exceptiom;
 
 /**
  * 
- * HRMISϵͳ���쳣
+ * HRMIS系统根异常
  * 
  * @author Se7en
  *
@@ -34,6 +34,4 @@ public class HRMISException extends RuntimeException {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
 }

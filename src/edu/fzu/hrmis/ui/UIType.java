@@ -2,7 +2,7 @@ package edu.fzu.hrmis.ui;
 
 /**
  * 
- * 系统所支持的UIType
+ * 绯荤粺鎵�鏀寔鐨刄IType
  * 
  * @author Se7en
  *

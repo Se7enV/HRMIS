@@ -2,7 +2,7 @@ package edu.fzu.hrmis.ui;
 
 /**
  * 
- * UI部件工厂
+ * UI閮ㄤ欢宸ュ巶
  * 
  * @author Se7en
  *
@@ -20,7 +20,7 @@ public class UIFactory {
 	}
 	
 	/**
-	 * 根据UIType获得UI部件
+	 * 鏍规嵁UIType鑾峰緱UI閮ㄤ欢
 	 * @param type
 	 * @return
 	 */

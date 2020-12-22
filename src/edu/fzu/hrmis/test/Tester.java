@@ -11,9 +11,6 @@ import edu.fzu.hrmis.domain.Employee;
  */
 public class Tester {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
 		EmployeeDao empDao = new EmployeeDao();

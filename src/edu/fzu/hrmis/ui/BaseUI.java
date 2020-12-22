@@ -2,7 +2,7 @@ package edu.fzu.hrmis.ui;
 
 /**
  * 
- * 用户界面基础接口
+ * 鐢ㄦ埛鐣岄潰鍩虹鎺ュ彛
  * 
  * @author Se7en
  *

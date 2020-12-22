@@ -5,7 +5,7 @@ import edu.fzu.hrmis.ui.UIType;
 import edu.fzu.hrmis.utils.SysUtils;
 
 /**
- * ³õÊ¼ÏµÍ³¹¦¼ÓÔØÈë¿Ú
+ * åˆå§‹ç³»ç»ŸåŠŸåŠ è½½å…¥å£
  * @author Se7en
  *
  */

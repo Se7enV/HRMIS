@@ -8,7 +8,7 @@ import edu.fzu.hrmis.exceptiom.BlankEntryException;
 import edu.fzu.hrmis.utils.SysUtils;
 
 /**
- * ÓÃ»§µÇÂ¼½çÃæ
+ * ç”¨æˆ·ç™»å½•ç•Œé¢
  * @author Se7en
  *
  */
@@ -19,8 +19,8 @@ public class EmpLoginUI implements BaseUI {
 
 		User user = new User();
 		StringBuilder sb = new StringBuilder();
-		sb.append("================ÓÃ»§µÇÂ¼½çÃæ-Login Menu================\n")
-		  .append("========= ÔÚÄúµÄEÅÌ¸ùÄ¿Â¼´´½¨ÁËuser.text´æ·ÅÕËºÅÃÜÂë  =========\n")
+		sb.append("================ç”¨æˆ·ç™»å½•ç•Œé¢-Login Menu================\n")
+		  .append("========= åœ¨æ‚¨çš„Eç›˜æ ¹ç›®å½•åˆ›å»ºäº†user.textå­˜æ”¾è´¦å·å¯†ç   =========\n")
 		  .append("============  user:000  password:000  =============\n");
 		System.out.println(sb.toString());
 
@@ -32,7 +32,7 @@ public class EmpLoginUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃÔ±¹¤¹¤ºÅ
+	 * è·å¾—å‘˜å·¥å·¥å·
 	 */
 	private String getUserNo() {
 
@@ -45,7 +45,7 @@ public class EmpLoginUI implements BaseUI {
 
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No Username entered ¨C try again");
+				SysUtils.pause("No Username entered â€“ try again");
 			}
 		}
 
@@ -64,7 +64,7 @@ public class EmpLoginUI implements BaseUI {
 
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No Password entered ¨C try again");
+				SysUtils.pause("No Password entered â€“ try again");
 			}
 		}
 

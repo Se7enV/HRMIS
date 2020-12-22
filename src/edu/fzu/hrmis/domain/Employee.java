@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * 
- * Ô±¹¤
+ * å‘˜å·¥
  * @author Se7en
  *
  */
@@ -14,28 +14,28 @@ public class Employee extends ValueObject implements Comparable<Employee>{
 	
 	private static final SimpleDateFormat SDF = new SimpleDateFormat("dd-MM-yyyy");
 	
-	/** Ô±¹¤¹¤ºÅ */
+	/** å‘˜å·¥å·¥å· */
 	private String payrollNo;
 
-	/** µç»°ºÅÂë */
+	/** ç”µè¯å·ç  */
 	private String telephoneCode;
 
-	/** Ãû */
+	/** å */
 	private String lastName;
 	
-	/** ĞÕ */
+	/** å§“ */
 	private String firstName;
 	
-	/** ºÅ */
+	/** å· */
 	private String initial;
 
-	/** ²¿ÃÅ±àºÅ */
+	/** éƒ¨é—¨ç¼–å· */
 	private int deptNo;
 	
-	/** Ö°Îñ */
+	/** èŒåŠ¡ */
 	private String jobTitle;
 	
-	/** ÈëË¾Ê±¼ä */
+	/** å…¥å¸æ—¶é—´ */
 	private Date hiringDate;
 
 	public String getPayrollNo() {
@@ -103,8 +103,8 @@ public class Employee extends ValueObject implements Comparable<Employee>{
 	}
 	
 	/**
-	 * ¶ÁÈ¡Ô±¹¤ĞÅÏ¢×Ö·û´®£¬½âÎöÖ®ºóĞÎ³ÉÔ±¹¤¶ÔÏó
-	 * @param str ĞÅÏ¢×Ö·û´®
+	 * è¯»å–å‘˜å·¥ä¿¡æ¯å­—ç¬¦ä¸²ï¼Œè§£æä¹‹åå½¢æˆå‘˜å·¥å¯¹è±¡
+	 * @param str ä¿¡æ¯å­—ç¬¦ä¸²
 	 *     Employee.getEmployeeFromStr("111:02-98781999:Williams:Nick:T:35:Computer Officer:14-10-2000"):
 	 * @return
 	 */
@@ -131,7 +131,7 @@ public class Employee extends ValueObject implements Comparable<Employee>{
 	}
 	
 	/**
-	 * ¹ÍÔ±ĞÅÏ¢Êä³ö
+	 * é›‡å‘˜ä¿¡æ¯è¾“å‡º
 	 */
 	public void printOut() {
 		System.out.println(this);
@@ -151,7 +151,7 @@ public class Employee extends ValueObject implements Comparable<Employee>{
 	}
 	
 	/**
-	 * ¼òµ¥¸ñÊ½´òÓ¡Êä³ö
+	 * ç®€å•æ ¼å¼æ‰“å°è¾“å‡º
 	 */
 	public void simplePrintOut() {
 		System.out.println(String.format("%s,%s,%s", this.lastName,this.firstName,this.telephoneCode));

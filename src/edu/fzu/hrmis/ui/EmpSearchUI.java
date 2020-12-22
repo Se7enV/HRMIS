@@ -22,7 +22,7 @@ public class EmpSearchUI implements BaseUI {
 		
 		String enterName = getEmpName();
 		if(!checkName(enterName, empList)) {
-			System.out.println("Keyword ¨C" + enterName + "- not found\n");
+			System.out.println("Keyword â€“" + enterName + "- not found\n");
 		}
 
 		SysUtils.pause("\nPress Enter to continue...");
@@ -44,7 +44,7 @@ public class EmpSearchUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No last name entered ¨C try again");
+				SysUtils.pause("No last name entered â€“ try again");
 			} catch (IllegalDataException e) {
 				SysUtils.pause("Last name can contain only alphabetical characters and spaces ");
 			}

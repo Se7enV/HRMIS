@@ -22,7 +22,7 @@ import edu.fzu.hrmis.ui.UIType;
 
 /**
  * 
- * ÏµÍ³¹¤¾ßÀà
+ * ç³»ç»Ÿå·¥å…·ç±»
  * 
  * @author Se7en
  *
@@ -30,7 +30,7 @@ import edu.fzu.hrmis.ui.UIType;
 public class SysUtils {
 	
 	/**
-	 * ´Ó¿ØÖÆÌ¨»ñµÃÒ»ĞĞÂ¼Èë£¬²»ÔÊĞí¿ÕÊäÈë
+	 * ä»æ§åˆ¶å°è·å¾—ä¸€è¡Œå½•å…¥ï¼Œä¸å…è®¸ç©ºè¾“å…¥
 	 * @return
 	 */
 	public static String getEntry() {
@@ -42,7 +42,7 @@ public class SysUtils {
 	}
 	
 	/**
-	 * ´øÌáÊ¾µÄÔİÍ£
+	 * å¸¦æç¤ºçš„æš‚åœ
 	 * @param promptStr
 	 */
 	public static void pause(String promptStr) {
@@ -51,8 +51,8 @@ public class SysUtils {
 	}
 
 	/**
-	 * ´Ó¿ØÖÆÌ¨ÉÏ»ñµÃÒ»ĞĞÊäÈë
-	 * @param allowBlank ÊÇ·ñÔÊĞí¿ÕÊäÈë£¨ÔİÍ££©
+	 * ä»æ§åˆ¶å°ä¸Šè·å¾—ä¸€è¡Œè¾“å…¥
+	 * @param allowBlank æ˜¯å¦å…è®¸ç©ºè¾“å…¥ï¼ˆæš‚åœï¼‰
 	 * @return
 	 */
 	private static String getEntry(boolean allowBlank) {
@@ -75,7 +75,7 @@ public class SysUtils {
 	}
 	
 	/**
-	 * ×Ö·û´®¿Õ´®¼ì²â
+	 * å­—ç¬¦ä¸²ç©ºä¸²æ£€æµ‹
 	 * @param str
 	 * @return
 	 */
@@ -84,7 +84,7 @@ public class SysUtils {
 	}
 	
 	/**
-	 * Ö´ĞĞUI²¿¼ş
+	 * æ‰§è¡ŒUIéƒ¨ä»¶
 	 * @param type
 	 */
 	public static void runUI(UIType type) {
@@ -92,19 +92,19 @@ public class SysUtils {
 	}
 	
 	/**
-	 * ×ÊÔ´¼ì²â
+	 * èµ„æºæ£€æµ‹
 	 */
 	public static void checkResource() {
 		
-		File file = new File("e:/records.txt");
+		File file = new File("records.txt");
 		
 		if(!file.exists()) {
-			throw new HRMISException("Required file ¨C records, does not exist.");
+			throw new HRMISException("Required file â€“ records, does not exist.");
 		}
 	}
 	
 	/**
-	 * User.txt ×ÊÔ´¼ì²â
+	 * User.txt èµ„æºæ£€æµ‹
 	 */
 	public static void checkUser() {
 
@@ -114,7 +114,7 @@ public class SysUtils {
 			try {
 				writer = new BufferedWriter(new FileWriter(file, true));
 				file.createNewFile();
-				writer.write("000:" + SysUtils.md5("000") + ":Èöµ©");
+				writer.write("000:" + SysUtils.md5("000") + ":æ’’æ—¦");
 				writer.flush();
 				writer.close();
 			} catch (IOException e) {
@@ -125,7 +125,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ÓÃÕıÔò±í´ïÊ½ÅĞ¶ÏTelephoneCode¹æ·¶
+	 * ç”¨æ­£åˆ™è¡¨è¾¾å¼åˆ¤æ–­TelephoneCodeè§„èŒƒ
 	 * @param str
 	 * @return
 	 */
@@ -133,8 +133,8 @@ public class SysUtils {
 		Pattern p1 = null, p2 = null;
 		Matcher m = null;
 		boolean isPhoneCode = false;
-		p1 = Pattern.compile("^[0][1-9]-[0-9]{5,10}$"); // ÑéÖ¤´øÇøºÅµÄ
-		p2 = Pattern.compile("^[1-9]{1}[0-9]{5,8}$"); // ÑéÖ¤Ã»ÓĞÇøºÅµÄ
+		p1 = Pattern.compile("^[0][1-9]-[0-9]{5,10}$"); // éªŒè¯å¸¦åŒºå·çš„
+		p2 = Pattern.compile("^[1-9]{1}[0-9]{5,8}$"); // éªŒè¯æ²¡æœ‰åŒºå·çš„
 		if (str.length() > 9) {
 			m = p1.matcher(str);
 			isPhoneCode = m.matches();
@@ -146,7 +146,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ÓÃÕıÔò±í´ïÊ½ÅĞ¶ÏĞÕÃû¹æ·¶
+	 * ç”¨æ­£åˆ™è¡¨è¾¾å¼åˆ¤æ–­å§“åè§„èŒƒ
 	 * @param name
 	 * @return
 	 */
@@ -161,7 +161,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ¹¤×÷Ãû:¿É°üº¬×ÖÄ¸¡¢Êı×Ö¡¢À¨ºÅ¡¢×Ö·û¼äÖ§³ÖÒ»¸ö¿Õ¸ñ¡¢¡°.¡±¡¢¡°¡ñ¡±¡¢¡°-¡±
+	 * å·¥ä½œå:å¯åŒ…å«å­—æ¯ã€æ•°å­—ã€æ‹¬å·ã€å­—ç¬¦é—´æ”¯æŒä¸€ä¸ªç©ºæ ¼ã€â€œ.â€ã€â€œâ—â€ã€â€œ-â€
 	 * @param name
 	 * @return
 	 */
@@ -170,13 +170,13 @@ public class SysUtils {
 			return false;
 		}
 		Pattern p = Pattern.compile(
-				"^(?:[\\u4e00-\\u9fa5]+)(?:¡ñ[\\u4e00-\\u9fa5]+)*$|^[a-zA-Z0-9]+\\s?[\\.¡¤\\-()a-zA-Z]*[a-zA-Z]+$");
+				"^(?:[\\u4e00-\\u9fa5]+)(?:â—[\\u4e00-\\u9fa5]+)*$|^[a-zA-Z0-9]+\\s?[\\.Â·\\-()a-zA-Z]*[a-zA-Z]+$");
 		Matcher m = p.matcher(name);
 		return m.matches();
 	}
 
 	/**
-	 * ÓÃÕıÔò±í´ïÊ½ÅĞ¶ÏÈÕÆÚ¹æ·¶
+	 * ç”¨æ­£åˆ™è¡¨è¾¾å¼åˆ¤æ–­æ—¥æœŸè§„èŒƒ
 	 * @param str
 	 * @return
 	 */
@@ -192,7 +192,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ÓÃÕıÔò±í´ïÊ½ÅĞ¶Ï×Ö·û´®ÊÇ·ñÊÇÊı×Ö
+	 * ç”¨æ­£åˆ™è¡¨è¾¾å¼åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ•°å­—
 	 * @param str
 	 * @return
 	 */
@@ -206,7 +206,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ÅĞ¶ÏÔ±¹¤ºÅÊÇ·ñÎ¨Ò»
+	 * åˆ¤æ–­å‘˜å·¥å·æ˜¯å¦å”¯ä¸€
 	 * @param EmpNo
 	 * @return
 	 */
@@ -222,7 +222,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ¸ù¾İ¹¤ºÅ»ñÈ¡ÏàÓ¦µÄĞÅÏ¢
+	 * æ ¹æ®å·¥å·è·å–ç›¸åº”çš„ä¿¡æ¯
 	 * @param EmpNo
 	 * @return
 	 */
@@ -238,7 +238,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * MD532Î»´óĞ´¼ÓÃÜ
+	 * MD532ä½å¤§å†™åŠ å¯†
 	 * @param psd
 	 * @return
 	 */
@@ -265,7 +265,7 @@ public class SysUtils {
 	}
 
 	/**
-	 * ÊÇ·ñÒªÖ´ĞĞor,ÊÇ·ñÒª¼ÌĞøÖ´ĞĞÆäËû
+	 * æ˜¯å¦è¦æ‰§è¡Œor,æ˜¯å¦è¦ç»§ç»­æ‰§è¡Œå…¶ä»–
 	 * @param str_delete
 	 * @return
 	 */

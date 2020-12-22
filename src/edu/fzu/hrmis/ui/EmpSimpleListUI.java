@@ -8,7 +8,7 @@ import edu.fzu.hrmis.utils.SysUtils;
 
 /**
  * 
- * Ô±¹¤ĞÅÏ¢¼òÂÔÁĞ±í½çÃæ
+ * å‘˜å·¥ä¿¡æ¯ç®€ç•¥åˆ—è¡¨ç•Œé¢
  * 
  * @author Se7en
  *

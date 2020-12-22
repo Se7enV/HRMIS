@@ -2,19 +2,19 @@ package edu.fzu.hrmis.domain;
 
 /**
  * 
- * 操作用户
+ * 鎿嶄綔鐢ㄦ埛
  * @author Se7en
  *
  */
 public class User extends ValueObject {
 
-	/** 用户编号 */
+	/** 鐢ㄦ埛缂栧彿 */
 	private String userNo;
 	
-	/** 用户密码 */
+	/** 鐢ㄦ埛瀵嗙爜 */
 	private String userPwd;
 	
-	/** 真实姓名 */
+	/** 鐪熷疄濮撳悕 */
 	private String realName;
 
 	public String getUserNo() {
@@ -55,7 +55,7 @@ public class User extends ValueObject {
 	}
 
 	/**
-	 * 账户信息输出
+	 * 璐︽埛淇℃伅杈撳嚭
 	 */
 	public void printOut() {
 		System.out.println(this);

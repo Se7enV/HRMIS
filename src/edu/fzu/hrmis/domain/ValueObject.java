@@ -2,7 +2,7 @@ package edu.fzu.hrmis.domain;
 
 /**
  * 
- * HRMIS业务基类
+ * HRMIS涓氬姟鍩虹被
  * @author Se7en
  *
  */

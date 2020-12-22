@@ -12,7 +12,7 @@ import edu.fzu.hrmis.utils.SysUtils;
 
 /**
  * 
- * Ô±¹¤ĞÅÏ¢µÇ¼Ç×¢²á½çÃæ
+ * å‘˜å·¥ä¿¡æ¯ç™»è®°æ³¨å†Œç•Œé¢
  * 
  * @author Se7en
  *
@@ -47,7 +47,7 @@ public class EmpAddUI implements BaseUI {
 	}
 	
 	/**
-	 * »ñµÃÔ±¹¤¹¤ºÅ
+	 * è·å¾—å‘˜å·¥å·¥å·
 	 */
 	private String getEmpNo() {
 
@@ -69,7 +69,7 @@ public class EmpAddUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No payroll number entered ¨C try again");
+				SysUtils.pause("No payroll number entered â€“ try again");
 			} catch (NumberFormatException e) {
 				SysUtils.pause("Payroll number can contain only numerical characters");
 			} catch (IllegalDataException e) {
@@ -82,7 +82,7 @@ public class EmpAddUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃµç»°ºÅÂë
+	 * è·å¾—ç”µè¯å·ç 
 	 */
 	protected static String getEmpTelePhone() {
 		String entry = null;
@@ -98,9 +98,9 @@ public class EmpAddUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No phone number entered ¨C try again");
+				SysUtils.pause("No phone number entered â€“ try again");
 			} catch (IllegalDataException e) {
-				SysUtils.pause("Invalid phone number ¨C try again");
+				SysUtils.pause("Invalid phone number â€“ try again");
 			}
 		}
 
@@ -108,7 +108,7 @@ public class EmpAddUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃĞÕÃû
+	 * è·å¾—å§“å
 	 */
 	protected static String getEmpName(String name_str) {
 		String entry = null;
@@ -124,7 +124,7 @@ public class EmpAddUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No last name entered ¨C try again");
+				SysUtils.pause("No last name entered â€“ try again");
 			} catch (IllegalDataException e) {
 				SysUtils.pause("Last name can contain only alphabetical characters and spaces ");
 			}
@@ -134,7 +134,7 @@ public class EmpAddUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃÔ±¹¤¹¤ºÅ
+	 * è·å¾—å‘˜å·¥å·¥å·
 	 */
 	protected static int getEmpDept() {
 
@@ -149,7 +149,7 @@ public class EmpAddUI implements BaseUI {
 				Integer.parseInt(entry);
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No Dept # entered ¨C try again");
+				SysUtils.pause("No Dept # entered â€“ try again");
 			} catch (NumberFormatException e) {
 				SysUtils.pause("Dept # can contain only digits with no spaces");
 			}
@@ -160,7 +160,7 @@ public class EmpAddUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃ¹¤×÷Ãû
+	 * è·å¾—å·¥ä½œå
 	 */
 	protected static String getEmpJobTitle() {
 		String entry = null;
@@ -176,7 +176,7 @@ public class EmpAddUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No Job title entered ¨C try again");
+				SysUtils.pause("No Job title entered â€“ try again");
 			} catch (IllegalDataException e) {
 				SysUtils.pause("Job title can contain only alphabetical characters and spaces ");
 			}
@@ -186,7 +186,7 @@ public class EmpAddUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃÈÕÆÚ
+	 * è·å¾—æ—¥æœŸ
 	 */
 	protected static Date getEmpDate() {
 
@@ -204,7 +204,7 @@ public class EmpAddUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No date hired entered ¨C try again");
+				SysUtils.pause("No date hired entered â€“ try again");
 			} catch (IllegalDataException e) {
 				SysUtils.pause("Invalid Date Hired ");
 			}

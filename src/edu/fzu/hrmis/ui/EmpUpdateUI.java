@@ -29,20 +29,20 @@ public class EmpUpdateUI implements BaseUI {
 
 		String empInfo = SysUtils.EmpNoToInfo(emp.getPayrollNo());
 		if (empDao.updateEmps(empInfo, emp)) {
-			SysUtils.pause("¸üĞÂ³É¹¦  --  Press Enter to continue...");
+			SysUtils.pause("æ›´æ–°æˆåŠŸ  --  Press Enter to continue...");
 		}
 
 	}
 
 	/**
-	 * »ñµÃÔ±¹¤¹¤ºÅ
+	 * è·å¾—å‘˜å·¥å·¥å·
 	 */
 	private String getEmpNo() {
 
 		String entry = null;
 
 		while (true) {
-			System.out.print("Enter employee¡¯s 3 digit payroll number to enable file updation: ");
+			System.out.print("Enter employeeâ€™s 3 digit payroll number to enable file updation: ");
 
 			try {
 				entry = SysUtils.getEntry();
@@ -52,7 +52,7 @@ public class EmpUpdateUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No payroll number entered ¨C try again");
+				SysUtils.pause("No payroll number entered â€“ try again");
 			} catch (NumberFormatException e) {
 				SysUtils.pause("Payroll number can contain only numerical characters");
 			} catch (IllegalDataException e) {

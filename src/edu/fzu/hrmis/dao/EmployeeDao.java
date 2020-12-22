@@ -19,14 +19,14 @@ import edu.fzu.hrmis.domain.Employee;
 /**
  * 
  * DAO: Data Access Object
- * EmployeeDao ½«¸ºÔğÔ±¹¤ĞÅÏ¢µÄÔöÉ¾¸Ä²é²Ù×÷
+ * EmployeeDao å°†è´Ÿè´£å‘˜å·¥ä¿¡æ¯çš„å¢åˆ æ”¹æŸ¥æ“ä½œ
  * 
  * @author Se7en
  *
  */
 public class EmployeeDao {
 
-	private static final String DATA_FILE_PATH = "e:/records.txt";
+	private static final String DATA_FILE_PATH = "records.txt";
 	
 	public List<Employee> loadEmps(){
 		
@@ -38,7 +38,7 @@ public class EmployeeDao {
 			reader = new BufferedReader(new InputStreamReader(new FileInputStream(DATA_FILE_PATH)));
 			while((entry = reader.readLine())!=null) {
 //				System.out.println(entry);
-				//×Ö·û´® -> Employee¶ÔÏó
+				//å­—ç¬¦ä¸² -> Employeeå¯¹è±¡
 				empList.add(Employee.getEmployeeFromStr(entry));
 			}
 		} catch (FileNotFoundException e) {
@@ -62,7 +62,7 @@ public class EmployeeDao {
 	}
 	
 	/**
-	 * Ğ´ÈëÎÄ¼ş
+	 * å†™å…¥æ–‡ä»¶
 	 * @param writeData
 	 */
 	public void writeFile(Employee writeData) {
@@ -84,7 +84,7 @@ public class EmployeeDao {
 	}
 
 	/**
-	 * É¾³ıÔ±¹¤
+	 * åˆ é™¤å‘˜å·¥
 	 * @param empInfo
 	 */
 	public void deleteEmps(String empInfo) {
@@ -114,7 +114,7 @@ public class EmployeeDao {
 			}
 
 			br.close();
-			BufferedWriter out = new BufferedWriter(new FileWriter(DATA_FILE_PATH));// Ğ´ÈëÎÄ¼ş
+			BufferedWriter out = new BufferedWriter(new FileWriter(DATA_FILE_PATH));// Ğ´ï¿½ï¿½ï¿½Ä¼ï¿½
 			out.write(bf.toString());
 			out.flush();
 			out.close();
@@ -127,7 +127,7 @@ public class EmployeeDao {
 	}
 
 	/**
-	 * ¸üĞÂÔ±¹¤ĞÅÏ¢
+	 * æ›´æ–°å‘˜å·¥ä¿¡æ¯
 	 * @param empInfo
 	 * @param empUp
 	 * @return
@@ -159,7 +159,7 @@ public class EmployeeDao {
 			}
 
 			br.close();
-			BufferedWriter out = new BufferedWriter(new FileWriter(DATA_FILE_PATH));// Ğ´ÈëÎÄ¼ş
+			BufferedWriter out = new BufferedWriter(new FileWriter(DATA_FILE_PATH));// Ğ´ï¿½ï¿½ï¿½Ä¼ï¿½
 			out.write(bf.toString());
 			out.flush();
 			out.close();
@@ -173,7 +173,7 @@ public class EmployeeDao {
 	}
 	
 	/**
-	 * »ñµÃ°´ÕÕlastnameÊôĞÔÅÅĞòµÄEmployeeĞÅÏ¢ĞòÁĞ
+	 * è·å¾—æŒ‰ç…§lastnameå±æ€§æ’åºçš„Employeeä¿¡æ¯åºåˆ—
 	 * @return
 	 */
 	public Set<Employee> loadSortedEmps(){

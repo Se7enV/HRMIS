@@ -5,7 +5,7 @@ import edu.fzu.hrmis.utils.SysUtils;
 
 /**
  * 
- * ÏµÍ³Ö÷²Ëµ¥½çÃæ
+ * ç³»ç»Ÿä¸»èœå•ç•Œé¢
  * 
  * @author Se7en
  *
@@ -17,16 +17,16 @@ public class MainMenuUI implements BaseUI {
 	static {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("\nSe7en¿Æ¼¼ - Employee Information - Main Menu\n")
+		sb.append("\nSe7enç§‘æŠ€ - Employee Information - Main Menu\n")
 		  .append("=====================================================\n\n")
 		  .append("1 - Print All Current Records\n")
-		  .append("2 ¨C Print All Current Records (formatted)\n")
-		  .append("3 ¨C Print Names and Phone Numbers\n")
-		  .append("4 ¨C Print Names and Phone Numbers (formatted)\n")
+		  .append("2 â€“ Print All Current Records (formatted)\n")
+		  .append("3 â€“ Print Names and Phone Numbers\n")
+		  .append("4 â€“ Print Names and Phone Numbers (formatted)\n")
 		  .append("5 - Search for specific Record(s)\n")
 		  .append("6 - Add New Records\n")
-		  .append("7 ¨C Delete Records\n")
-		  .append("8 ¨C Update Records\n\n")
+		  .append("7 â€“ Delete Records\n")
+		  .append("8 â€“ Update Records\n\n")
 		  .append("Q - Quit\n\n")
 		  .append("Your Selection:");
 
@@ -80,12 +80,12 @@ public class MainMenuUI implements BaseUI {
 						isContinued = false;
 						break;
 					default:
-						SysUtils.pause("Invalid code! Press Enter to continue¡­");
+						SysUtils.pause("Invalid code! Press Enter to continueâ€¦");
 				
 				}
 				
 			}catch(BlankEntryException e) {
-				SysUtils.pause("No selection entered. Press Enter to continue¡­");
+				SysUtils.pause("No selection entered. Press Enter to continueâ€¦");
 			}
 				
 		}

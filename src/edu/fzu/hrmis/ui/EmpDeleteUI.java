@@ -8,7 +8,7 @@ import edu.fzu.hrmis.utils.SysUtils;
 
 /**
  * 
- * ÓÃ»§ĞÅÏ¢É¾³ı½çÃæ
+ * ç”¨æˆ·ä¿¡æ¯åˆ é™¤ç•Œé¢
  * 
  * @author Se7en
  *
@@ -46,16 +46,16 @@ public class EmpDeleteUI implements BaseUI {
 	}
 
 	/**
-	 * »ñµÃÔ±¹¤¹¤ºÅ
+	 * è·å¾—å‘˜å·¥å·¥å·
 	 */
 	private String getEmpNo() {
 
 		String entry = null;
 
 		while (true) {
-			System.out.println("Adfaith Consulting ¨C Employee Records:\r\n" + "======================================");
+			System.out.println("Adfaith Consulting â€“ Employee Records:\r\n" + "======================================");
 			System.out.println("Employee Record Deletion:");
-			System.out.print("Enter employee¡¯s 3 digit payroll number to enable file deletion: ");
+			System.out.print("Enter employeeâ€™s 3 digit payroll number to enable file deletion: ");
 
 			try {
 				entry = SysUtils.getEntry();
@@ -65,7 +65,7 @@ public class EmpDeleteUI implements BaseUI {
 				}
 				break;
 			} catch (BlankEntryException e) {
-				SysUtils.pause("No payroll number entered ¨C try again");
+				SysUtils.pause("No payroll number entered â€“ try again");
 			} catch (NumberFormatException e) {
 				SysUtils.pause("Payroll number can contain only numerical characters");
 			} catch (IllegalDataException e) {

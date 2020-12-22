@@ -11,7 +11,7 @@ import java.util.List;
 import edu.fzu.hrmis.domain.User;
 
 /**
- * ½«¸ºÔðµÇÂ¼ÓÃ»§ÐÅÏ¢µÄÔöÉ¾¸Ä²é²Ù×÷
+ * å°†è´Ÿè´£ç™»å½•ç”¨æˆ·ä¿¡æ¯çš„å¢žåˆ æ”¹æŸ¥æ“ä½œ
  * @author Se7en
  *
  */
@@ -28,7 +28,7 @@ public class UserDao {
 		try {
 			reader = new BufferedReader(new InputStreamReader(new FileInputStream(USER_FILE_PATH)));
 			while ((entry = reader.readLine()) != null) {
-				// ×Ö·û´® -> Employee¶ÔÏó£¿
+				// å­—ç¬¦ä¸² -> Employeeå¯¹è±¡ï¼Ÿ
 				empList.add(User.getEmployeeFromStr(entry));
 			}
 		} catch (FileNotFoundException e) {
