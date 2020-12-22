@@ -17,7 +17,7 @@ public class MainMenuUI implements BaseUI {
 	static {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("\n讯通科技 - Employee Information - Main Menu\n")
+		sb.append("\nSe7en科技 - Employee Information - Main Menu\n")
 		  .append("=====================================================\n\n")
 		  .append("1 - Print All Current Records\n")
 		  .append("2 – Print All Current Records (formatted)\n")
